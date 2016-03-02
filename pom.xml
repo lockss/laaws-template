@@ -7,7 +7,7 @@
     <artifactId>snafl-template</artifactId>
     <packaging>jar</packaging>
     <version>1.0</version>
-    <name>resttmpl</name>
+    <name>snafl-template</name>
 
     <dependencies>
     <!-- jersey dependencies for server -->
