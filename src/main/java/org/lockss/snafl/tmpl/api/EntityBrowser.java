@@ -13,12 +13,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-@Path("/elements")
-@Api (value = "/elements", description = "Simple Service to browse elements")
+@Path("/entity")
+@Api (value = "/entity", description = "Simple Service to browse entities")
 public class EntityBrowser {
   static List<Entity> entityList;
   static {
-    entityList = new ArrayList<Entity>();
+    entityList = new ArrayList<>();
     for (int i = 0; i <10; i++) {
       Entity entity = new Entity();
       entity.setName("entity" + i);

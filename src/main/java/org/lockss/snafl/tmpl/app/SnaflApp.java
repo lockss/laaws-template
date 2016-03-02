@@ -1,6 +1,7 @@
 package org.lockss.snafl.tmpl.app;
 
 
+  import org.eclipse.jetty.server.session.SessionHandler;
   import org.glassfish.jersey.jackson.JacksonFeature;
   import org.lockss.snafl.tmpl.api.EntityBrowser;
   import io.swagger.jaxrs.config.BeanConfig;
@@ -85,7 +86,7 @@ public class SnaflApp
     // This configures Swagger
     BeanConfig beanConfig = new BeanConfig();
     beanConfig.setVersion( "1.0.0" );
-    beanConfig.setResourcePackage( EntityBrowser.class.getPackage().getName() );
+    beanConfig.setResourcePackage("org.lockss.snafl.tmpl.api");
     beanConfig.setScan( true );
     beanConfig.setBasePath( "/" );
     beanConfig.setDescription( "Simple Browser API for SNAFL." );
@@ -98,16 +99,19 @@ public class SnaflApp
     ResourceConfig resourceConfig = new ResourceConfig();
     // Replace EntityBrowser with your resource class
     // io.swagger.jaxrs.listing loads up Swagger resources
-    resourceConfig.packages( EntityBrowser.class.getPackage().getName(),
-                             ApiListingResource.class.getPackage().getName() );
+    resourceConfig.packages("org.lockss.snafl.tmpl.api",
+                            "io.swagger.jaxrs.listing");
     resourceConfig.register(JacksonFeature.class);
     ServletContainer servletContainer = new ServletContainer( resourceConfig );
-    ServletHolder entityBrowser = new ServletHolder( servletContainer );
-    ServletContextHandler entityBrowserContext = new ServletContextHandler( ServletContextHandler.SESSIONS );
-    entityBrowserContext.setContextPath( "/" );
-    entityBrowserContext.addServlet( entityBrowser, "/*" );
+    ServletHolder servletHolder = new ServletHolder( servletContainer );
+    servletHolder.setInitParameter("jersey.config.server.tracing", "ALL");
+    ServletContextHandler servletContextHandler =
+      new ServletContextHandler(ServletContextHandler.SESSIONS);
+    servletContextHandler.setSessionHandler(new SessionHandler());
+    servletContextHandler.setContextPath( "/" );
+    servletContextHandler.addServlet( servletHolder, "/*" );
 
-    return entityBrowserContext;
+    return servletContextHandler;
   }
 
 
@@ -116,11 +120,11 @@ public class SnaflApp
   {
     final ResourceHandler swaggerUIResourceHandler = new ResourceHandler();
     swaggerUIResourceHandler.setResourceBase(
-      SnaflApp.class.getClassLoader().getResource( "swaggerui" ).toURI()
+      SnaflApp.class.getClassLoader().getResource("swaggerui").toURI()
                                                             .toString() );
     final ContextHandler swaggerUIContext = new ContextHandler();
     swaggerUIContext.setContextPath( "/docs/" );
-    swaggerUIContext.setHandler( swaggerUIResourceHandler );
+    swaggerUIContext.setHandler(swaggerUIResourceHandler);
 
     return swaggerUIContext;
   }

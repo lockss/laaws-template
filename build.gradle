@@ -4,7 +4,7 @@ apply plugin: 'maven'
 group = 'org.lockss.snafl'
 version = '1.0'
 
-description = """resttmpl"""
+description = """snafl-template"""
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
