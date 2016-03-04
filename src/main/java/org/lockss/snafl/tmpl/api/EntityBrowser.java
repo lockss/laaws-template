@@ -6,6 +6,7 @@ import org.lockss.snafl.tmpl.model.Entity;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
@@ -27,6 +28,7 @@ public class EntityBrowser {
       entityList.add(entity);
     }
   }
+
   @GET
   @Path("/one")
   @ApiOperation(value = "Return one entity",
@@ -37,6 +39,17 @@ public class EntityBrowser {
     Random rand = new Random();
     int el_num = rand.nextInt(10);
     Entity entity = entityList.get(el_num);
+    return Response.ok().entity(entity).build();
+  }
+
+  @GET
+  @Path("/{id}")
+  @ApiOperation(value = "Return an entity with id",
+    notes = "Returns one entity with the passed id",
+    response = Entity.class)
+  @Produces(MediaType.APPLICATION_JSON)
+  public Response getId(@PathParam("id") Integer id) {
+    Entity entity = entityList.get(id);
     return Response.ok().entity(entity).build();
   }
 
