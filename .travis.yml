@@ -1,0 +1,10 @@
+language: java
+jdk:
+- openjdk8
+- oraclejdk8
+
+branches:
+  only:
+  - master
+notifications:
+  email: clairetg@stanford.edu

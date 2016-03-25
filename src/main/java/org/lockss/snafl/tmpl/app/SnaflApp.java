@@ -83,8 +83,8 @@ public class SnaflApp
     beanConfig.setTitle( "Entity Browser" );
 
     beanConfig.setSchemes(new String[]{"http"});
-    beanConfig.setHost(host);
-    beanConfig.setBasePath("/docs");
+    //beanConfig.setHost(host);
+    //beanConfig.setBasePath("/docs");
     beanConfig.setScan(true);
 
   }
