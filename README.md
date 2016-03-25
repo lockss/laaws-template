@@ -6,7 +6,7 @@ This includes autogen of api documentation using swagger.
 ### <code>mvn clean package exec:java </code>
 
 ## API is documented at:
-### localhost:/docs/
+### localhost:8888/docs/
 
 ## The existing REST paths:
 ### /entity/{id}
