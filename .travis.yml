@@ -1,14 +1,18 @@
 language: java
-  - oraclejdk8
+
+sudo: false
+
+jdk:
+  - openjdk8
   
-before_cache:
-  - rm -f $HOME/.gradle/caches/modules-2/modules-2.lock
-cache:
-  directories:
-    - $HOME/.gradle/caches/
-    - $HOME/.gradle/wrapper/
+script: mvn clean package
+
 branches:
   only:
   - master
+  
+os:
+  - linux
+
 notifications:
   email: clairetg@stanford.edu
