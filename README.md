@@ -1,4 +1,4 @@
-# snafl-template [![Build Status](https://travis-ci.org/lockss/snafl-template.svg?branch=master)](https://travis-ci.org/lockss/snafl-template)
+# snafl-template [![Build Status](https://travis-ci.org/lockss/laaws-template.svg?branch=master)](https://travis-ci.org/lockss/laaws-template)
 
 The barebones build template for snafl development.
 This includes autogen of api documentation using swagger.
