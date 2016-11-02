@@ -4,10 +4,11 @@ The barebones build template for snafl development.
 This includes autogen of api documentation using swagger.
 
 ### Build and Run with
-#####<code>mvn clean package exec:java</code>
+#####<code>mvn clean package</code>
+#####<code>mvn wildfly-swarm:run</code>
   
 ### Base URL: 
-#####<code>localhost:8888</code>
+#####<code>localhost:8080/code>
   
 ### API Documentaion path:
 #####<code>/docs/</code>
