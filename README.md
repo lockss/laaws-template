@@ -8,7 +8,7 @@ This includes autogen of api documentation using swagger.
 #####<code>mvn wildfly-swarm:run</code>
   
 ### Base URL: 
-#####<code>localhost:8080/code>
+#####<code>localhost:8080</code>
   
 ### API Documentaion path:
 #####<code>/docs/</code>
