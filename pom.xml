@@ -3,11 +3,11 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.lockss.snafl</groupId>
-    <artifactId>snafl-template</artifactId>
+    <groupId>org.lockss.laaws</groupId>
+    <artifactId>laaws-template</artifactId>
     <packaging>jar</packaging>
     <version>1.0</version>
-    <name>snafl-template</name>
+    <name>laaws-template</name>
 
     <dependencies>
     <!-- jersey dependencies for server -->
