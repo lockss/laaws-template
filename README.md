@@ -4,18 +4,18 @@ The barebones build template for snafl development.
 This includes autogen of api documentation using swagger.
 
 ### Build and Run with
-#####<code>mvn clean package</code>
-#####<code>mvn wildfly-swarm:run</code>
+##### `mvn clean package`  
+##### `mvn wildfly-swarm:run`  
   
 ### Base URL: 
-#####<code>localhost:8080</code>
+##### `localhost:8080`
   
 ### API Documentaion path:
-#####<code>/docs/</code>
+##### `/docs/`
   
 ### The REST paths:
-#####<code>/entity/{id}</code>
+##### `/entity/{id}`
   
-#####<code>/entity/one</code>
+##### `/entity/one`
   
-#####<code>/entity/all</code>
+##### `/entity/all`
