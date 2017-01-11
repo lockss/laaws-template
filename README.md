@@ -1,6 +1,6 @@
-# laaws-template [![Build Status](https://travis-ci.org/lockss/laaws-template.svg?branch=master)](https://travis-ci.org/lockss/laaws-template)
+ # laaws-template [![Build Status](https://travis-ci.org/lockss/laaws-template.svg?branch=master)](https://travis-ci.org/lockss/laaws-template)
 
-The barebones build template for snafl development.
+The barebones build template for laaws development.
 
 ### Build and Run with
 ##### `mvn clean package`  
