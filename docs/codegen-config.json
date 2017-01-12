@@ -1,0 +1,11 @@
+﻿{
+  "groupId":"org.lockss.laaws",
+  "artifactId":"laaws-template",
+  "artifactVersion":"1.0.0",
+  "modelPackage":"org.lockss.laaws.template.model",
+  "apiPackage":"org.lockss.laaws.template.api",
+  "invokerPackage":"org.lockss.laaws.template",
+  "hideGenerationTimestamp": true,
+  "title": "Lockss Service Template",
+  "dateLibrary": "java8"
+}
