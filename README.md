@@ -7,14 +7,14 @@ The barebones build template for laaws development.
 ##### `mvn wildfly-swarm:run`  
   
 ### Base URL: 
-##### `localhost:8080`
+##### `localhost`
   
 ### API Documentaion path:
 ##### `/docs/`
   
 ### The REST paths:
-##### `/entity/{id}`
+##### `/entities/{id}`
   
-##### `/entity/one`
+##### `/entities/one`
   
-##### `/entity/all`
+##### `/entities/all`
