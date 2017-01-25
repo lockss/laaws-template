@@ -10,7 +10,8 @@ The barebones build template for laaws development.
 ##### `localhost`
   
 ### API Documentaion path:
-##### `/docs/`
+##### `/swagger-io/`
+##### enter `http:\\host:port\swagger.json`
   
 ### The REST paths:
 ##### `/entities/{id}`

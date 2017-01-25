@@ -5,14 +5,14 @@ import java.util.ArrayList;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 
 
 
 /**
  * A simple entity
  **/
-
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaResteasyServerCodegen", date = "2016-11-02T10:08:28.161-07:00")
+@ApiModel
 public class Entity   {
   
   private Integer id = null;
@@ -22,7 +22,7 @@ public class Entity   {
   /**
    * The id assigned to this entity
    **/
-  
+  @ApiModelProperty(position=1, required=true, value = "ID assigned to Entity")
   @JsonProperty("id")
   public Integer getId() {
     return id;
@@ -34,7 +34,7 @@ public class Entity   {
   /**
    * The name of this entity
    **/
-  
+  @ApiModelProperty(position=2, required=true, value = "Name of Entity")
   @JsonProperty("name")
   public String getName() {
     return name;
@@ -46,7 +46,7 @@ public class Entity   {
   /**
    * The value of this entity
    **/
-  
+  @ApiModelProperty(position=3, required=true, value = "Value of Entity")
   @JsonProperty("value")
   public String getValue() {
     return value;

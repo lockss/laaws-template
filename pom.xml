@@ -3,7 +3,7 @@
     <groupId>org.lockss.laaws</groupId>
   <artifactId>laaws-template</artifactId>
   <packaging>war</packaging>
-  <name>laaws-tmpl</name>
+  <name>laaws-template</name>
   <version>1.0.0</version>
   <properties>
     <version.wildfly.swarm>2016.10.0</version.wildfly.swarm>
