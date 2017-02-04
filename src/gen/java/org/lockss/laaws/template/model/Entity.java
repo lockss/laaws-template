@@ -1,20 +1,18 @@
 package org.lockss.laaws.template.model;
 
-import java.util.Objects;
-import java.util.ArrayList;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
+import java.util.Objects;
 
 
 /**
  * A simple entity
  **/
 @ApiModel
-public class Entity   {
-  
+public class Entity {
+
   private Integer id = null;
   private String name = null;
   private String value = null;
@@ -22,11 +20,12 @@ public class Entity   {
   /**
    * The id assigned to this entity
    **/
-  @ApiModelProperty(position=1, required=true, value = "ID assigned to Entity")
+  @ApiModelProperty(position = 1, required = true, value = "ID assigned to Entity")
   @JsonProperty("id")
   public Integer getId() {
     return id;
   }
+
   public void setId(Integer id) {
     this.id = id;
   }
@@ -34,11 +33,12 @@ public class Entity   {
   /**
    * The name of this entity
    **/
-  @ApiModelProperty(position=2, required=true, value = "Name of Entity")
+  @ApiModelProperty(position = 2, required = true, value = "Name of Entity")
   @JsonProperty("name")
   public String getName() {
     return name;
   }
+
   public void setName(String name) {
     this.name = name;
   }
@@ -46,11 +46,12 @@ public class Entity   {
   /**
    * The value of this entity
    **/
-  @ApiModelProperty(position=3, required=true, value = "Value of Entity")
+  @ApiModelProperty(position = 3, required = true, value = "Value of Entity")
   @JsonProperty("value")
   public String getValue() {
     return value;
   }
+
   public void setValue(String value) {
     this.value = value;
   }
@@ -79,7 +80,7 @@ public class Entity   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class Entity {\n");
-    
+
     sb.append("    id: ").append(toIndentedString(id)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    value: ").append(toIndentedString(value)).append("\n");
