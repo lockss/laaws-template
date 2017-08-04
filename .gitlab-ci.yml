@@ -70,6 +70,9 @@ unit_test:
   stage: test
   script:
     - mvn clean test -B
+  tags:
+    - docker
+    - maven
 
 .build: &build_template
   stage: build
@@ -86,6 +89,9 @@ develop_build:
     expire_in: 1 day
     paths:      
       - target/*.jar
+  tags:
+   - docker
+   - maven
 
 master_build:
   <<: *build_template
