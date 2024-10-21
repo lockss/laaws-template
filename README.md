@@ -1,4 +1,24 @@
- # laaws-template [![Build Status](https://travis-ci.org/lockss/laaws-template.svg?branch=master)](https://travis-ci.org/lockss/laaws-template)
+**ARCHIVED ARCHIVED ARCHIVED ARCHIVED ARCHIVED ARCHIVED ARCHIVED ARCHIVED**
+
+```
+  ##    ####    ###   #    #  ###  #   #  #####  #####   
+ #  #   #   #  #   #  #    #   #   #   #  #       #   #  
+#    #  #   #  #      #    #   #   #   #  #       #   #  
+#    #  #   #  #      #    #   #    # #   #       #   #  
+#    #  ####   #      ######   #    # #   ####    #   #  
+######  ##     #      #    #   #    # #   #       #   #  
+#    #  # #    #      #    #   #     #    #       #   #  
+#    #  #  #   #   #  #    #   #     #    #       #   #  
+#    #  #   #   ###   #    #  ###    #    #####  #####  
+```
+
+**ARCHIVED ARCHIVED ARCHIVED ARCHIVED ARCHIVED ARCHIVED ARCHIVED ARCHIVED**
+
+**This Git repository is obsolete and has been archived.**
+
+----
+
+# laaws-template [![Build Status](https://travis-ci.org/lockss/laaws-template.svg?branch=master)](https://travis-ci.org/lockss/laaws-template)
 
 The barebones build template for laaws development.
 
